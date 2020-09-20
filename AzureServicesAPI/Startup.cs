@@ -34,7 +34,7 @@ namespace AzureServicesAPI
             {
                 c.SwaggerDoc("v1", new OpenApiInfo()
                 {
-                    Title = "Azure Services Demo API - Action Tests",
+                    Title = "Azure Services",
                     Version = "v1",
                     Contact = new OpenApiContact() { Email = "manoj.bhargavan@outlook.in", Name = "Manoj Bhargavan" }
                 });
