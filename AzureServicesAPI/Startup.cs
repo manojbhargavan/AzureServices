@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -32,10 +34,14 @@ namespace AzureServicesAPI
             {
                 c.SwaggerDoc("v1", new OpenApiInfo()
                 {
-                    Title = "Azure Services",
+                    Title = "Azure Services Demo API",
                     Version = "v1",
                     Contact = new OpenApiContact() { Email = "manoj.bhargavan@outlook.in", Name = "Manoj Bhargavan" }
                 });
+
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                c.IncludeXmlComments(xmlPath);
             });
         }
 

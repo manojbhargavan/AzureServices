@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AzureServicesAPI</name>
+    </assembly>
+    <members>
+        <member name="T:AzureServicesAPI.Controllers.StorageAccountContainerController">
+            <summary>
+            Storage Account Container Client API
+            </summary>
+        </member>
+        <member name="M:AzureServicesAPI.Controllers.StorageAccountContainerController.ListContainers(Microsoft.Extensions.Logging.ILogger{AzureServicesAPI.Controllers.StorageAccountContainerController},System.String,System.String)">
+            <summary>
+            List all the container in the storage account, no exception handling since this is a sample
+            </summary>
+            <param name="logger">DI Logger</param>
+            <param name="storageAccountName">Storage Account Name</param>
+            <param name="sharedAccessSignatureToken">Shared access signature Token which can be generated from Azure under Storage Account -> Container -> Shared access signature</param>
+            <returns>Json Object with some basic information about the container</returns>
+        </member>
+        <member name="M:AzureServicesAPI.Controllers.StorageAccountContainerController.ListContainersAndContents(Microsoft.Extensions.Logging.ILogger{AzureServicesAPI.Controllers.StorageAccountContainerController},System.String,System.String)">
+            <summary>
+            List all the container and its contents in the storage account, no exception handling since this is a sample
+            </summary>
+            <param name="logger">DI Logger</param>
+            <param name="storageAccountName">Storage Account Name</param>
+            <param name="sharedAccessSignatureToken">Shared access signature Token which can be generated from Azure under Storage Account -> Container -> Shared access signature</param>
+            <returns>Json Object with some basic information about the container and its contents</returns>
+        </member>
+        <member name="M:AzureServicesAPI.Controllers.StorageAccountContainerController.CreateContainer(Microsoft.Extensions.Logging.ILogger{AzureServicesAPI.Controllers.StorageAccountContainerController},System.String,System.String,System.String)">
+            <summary>
+            Create container
+            </summary>
+            <param name="logger">DI Logger</param>
+            <param name="storageAccountName">Storage Account Name</param>
+            <param name="sharedAccessSignatureToken">Shared access signature Token which can be generated from Azure under Storage Account -> Container -> Shared access signature</param>
+            <param name="containerName">Name of the container to create</param>
+            <returns>Json Object with some basic information about the container and its contents</returns>
+        </member>
+    </members>
+</doc>

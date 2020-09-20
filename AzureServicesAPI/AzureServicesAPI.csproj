@@ -4,10 +4,21 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\Projects\GitRepos\AzureServices\AzureServicesAPI\AzureServicesAPI.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>D:\Projects\GitRepos\AzureServices\AzureServicesAPI\AzureServicesAPI.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
-    <PackageReference Include="Azure.Storage.Blobs" Version="12.6.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AzureServiceLibrary\AzureServiceLibrary.csproj" />
   </ItemGroup>
 
 
