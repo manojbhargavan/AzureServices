@@ -5,7 +5,12 @@ VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureServicesAPI", "AzureServicesAPI\AzureServicesAPI.csproj", "{EFAC0A17-F7AA-4C88-8EDC-F12442207EE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureServiceLibrary", "AzureServiceLibrary\AzureServiceLibrary.csproj", "{EADFF91D-7694-4300-B44E-45CE85DA6233}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureServiceLibrary", "AzureServiceLibrary\AzureServiceLibrary.csproj", "{EADFF91D-7694-4300-B44E-45CE85DA6233}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3E4F58A7-1D67-4BEF-8F17-7032E2BD35A3}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
