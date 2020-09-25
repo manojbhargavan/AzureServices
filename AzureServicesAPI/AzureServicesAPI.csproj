@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -9,7 +10,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>D:\Projects\GitRepos\AzureServices\AzureServicesAPI\AzureServicesAPI.xml</DocumentationFile>
+    <DocumentationFile>.\AzureServicesAPI.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
